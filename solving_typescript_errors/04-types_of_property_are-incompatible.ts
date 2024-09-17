@@ -34,40 +34,40 @@ type RoutingConfig = {
 };
 
 // solution 1 using type annotation
-const routingConfig: RoutingConfig = {
-  routes: [
-    {
-      path: "home",
-      component: "HomeComponent",
-    },
-    {
-      path: "about",
-      component: 12,
-    },
-    {
-      path: "contact",
-      component: "ContactComponent",
-    },
-  ],
-};
+// const routingConfig: RoutingConfig = {
+//   routes: [
+//     {
+//       path: "home",
+//       component: "HomeComponent",
+//     },
+//     {
+//       path: "about",
+//       component: 12,
+//     },
+//     {
+//       path: "contact",
+//       component: "ContactComponent",
+//     },
+//   ],
+// };
 
-
-const routingConfig2 = {
-  routes: [
-    {
-      path: "home",
-      component: "HomeComponent",
-    },
-    {
-      path: "about",
-      component: 12,
-    },
-    {
-      path: "contact",
-      component: "ContactComponent",
-    },
-  ],
-} satisfies  RoutingConfig
+// solution 2 using satisfies
+// const routingConfig2 = {
+//   routes: [
+//     {
+//       path: "home",
+//       component: "HomeComponent",
+//     },
+//     {
+//       path: "about",
+//       component: 12,
+//     },
+//     {
+//       path: "contact",
+//       component: "ContactComponent",
+//     },
+//   ],
+// } satisfies  RoutingConfig
 
 const createRoutes = (config: {
   routes: {
@@ -76,4 +76,4 @@ const createRoutes = (config: {
   }[];
 }) => {};
 
-createRoutes(routingConfig);
+// createRoutes(routingConfig);
