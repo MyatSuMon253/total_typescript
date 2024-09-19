@@ -12,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "vitest": "^2.1.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
   }
 }
